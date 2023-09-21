@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix - Watch TV Shows Online, Watch Movies Online</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Konkhmer+Sleokchher&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="showcase">
+        <div class="showcase-top">
+
+            <div class="navbar">
+                <img src="images/netflix.png" alt="logo" class="logo">
+                <div class="logo-right">
+                    <button class="english">
+                        <img src="images/globe.png" alt="" class="globe">
+                        <span>English</span>
+                        <img src="images/down-arrow.png" alt="" class="down-arrow">
+                    </button>
+                    <button class="sign-in">Sign In
+                    </button>
+                </div>
+            </div>
+            <div class="title-container">
+                <div class="title-up">
+                    <h1 class="ultimate">
+                        Unlimited movies, TV shows and more
+                    </h1>
+                    <h2 class="watch">
+                        Watch anywhere. Cancel anytime.
+                    </h2>
+                    <p class="ready">
+                        Ready to watch? Enter your email to create or restart your membership.
+                    </p>
+                </div>
+                <div class="title-down">
+                    <input type="email" name="myemail" id="email" placeholder="Email address">
+                    <button class="started">
+                        <span>Get Started</span>
+                        <img src="images/next.png" alt="next" class="next-arrow">
+                    </button>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="second-container">
+        <div class="item">
+            kjhkjh
+        </div>
+        <div class="item">
+            khkjh
+        </div>
+        <div class="item">
+            jkjljlkj
+        </div>
+        <div class="item">
+            jhkjhkjh
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/c3d2f11b2b.js" crossorigin="anonymous"></script>
+</body>
+</html>
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: sans-serif;
+    --webkit-font-smoothing: antialiased;
+    background: #000;
+    color: #999;
+}
+
+.showcase{
+    width: 100%;
+    height: 93vh;
+    position: relative;
+    background: url('https://i.ibb.co/vXqDmnh/background.jpg') no-repeat center center/cover;
+}
+
+.showcase::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.584);
+    box-shadow: inset 120px 100px 250px black, inset -120px -100px 250px black;
+}
+.showcase-top{
+    position: absolute;
+    height: 90px;
+    z-index: 2;
+}
+
+.navbar{
+    width: 100vw;
+    height: 90px;
+    /*border: 2px solid red;*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5rem;
+}
+
+.logo{
+    width: 10rem;
+}
+
+.logo-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.globe{
+    width: 1rem;
+    filter: invert(1);
+    margin-right: .8rem;
+}
+
+.down-arrow{
+    width: 1rem;
+    filter: invert(1);
+    margin-left: .6rem;
+}
+
+.english{
+    background-color: black;
+    color: white;
+    padding: .8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid gray;
+    outline: none;
+    border-radius: 9px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.english:hover{
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.79);
+}
+
+.sign-in{
+    padding: .8rem;
+    font-size: 1rem;
+    background-color: rgb(213, 11, 11);
+    color: white;
+    border: none;
+    border-radius: 9px;
+    margin-left: 2rem;
+    cursor: pointer;
+}
+
+.sign-in:hover{
+    opacity: .9;
+}
+
+.title-down{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.started{
+    padding: 1.2rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: white;
+    background-color:rgb(213, 11, 11) ;
+    overflow: hidden;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 9px;
+    /* padding-left: 1.2rem; */
+}
+
+input:focus{
+    /*border: none;*/
+    outline: none;
+    color: gray;
+    border: 1.2px solid rgba(209, 209, 209, 0.811);
+}
+
+#email{
+    padding:1.4rem 1rem;
+    font-size: 1.1rem;
+    width: 360px;
+    background-color: rgba(67, 67, 67, 0.468);
+    border: 1.2px solid rgba(126, 125, 125, 0.811);
+    backdrop-filter: blur(5px);
+    border-radius: 9px;
+    margin-right: 1.5rem;
+}
+
+.next-arrow{
+    width: 1.8rem;
+    margin-left: .3rem;
+    filter: invert(1);
+}
+
+.title-container{
+    /* border: 2px solid red; */
+    padding: 3rem 6rem;
+}
+
+.title-up{
+    /* border: 2px solid yellow; */
+}
+
+.ultimate{
+    font-size: 40px;
+    color: white;
+    width: 980px;
+    letter-spacing: 1px;
+    line-height: 1.3;
+    border: 2px solid blue;
+    text-shadow: 3px 3px 4px black;
+    margin-bottom: 2rem;
+    font-family: 'Konkhmer Sleokchher', cursive;
+}
+
+.watch{
+    margin-bottom: 2.2rem;
+}
+
+.ready{
+    color: rgb(229, 229, 229);
+    margin-bottom: 1.2rem;
+}
+
+.second-container{
+    border: 2px solid red;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.items{
+    border: 2px solid white;
+    width: 630px;
+    height: 700px;
+}
